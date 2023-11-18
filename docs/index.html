@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>Formulario</title>
+   
+</head>
+
+
+
+
+<body id="body">
+
+    <div class="container m-3 me-5 ">
+        <label for="nome" class="form-label ">Nome</label>
+        <input type="text" class="form-control " id="nome">
+      </div>
+
+      <div class="container m-3 me-5 ">
+        <label for="sobrenome" class="form-label ">Sobrenome</label>
+        <input type="text" class="form-control " id="sobrenome">
+      </div>
+
+    
+   
+
+    <div class="container m-3">
+
+        <h3>Quais desses artistas você normalmente escuta?</h3>
+
+        <div class="form-check">
+            <label class="form-check-label" for="TheWeekend"> The Weeknd </label>
+            <input class="form-check-input" type="checkbox" name="artista" value="TW" id="TheWeeknd">
+        </div>
+          
+        <div class="form-check">
+            <label class="form-check-label" for="TaylorSwift">Taylor Swift</label>
+            <input class="form-check-input" type="checkbox" name="artista" value="TS" id="TaylorSwift">
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label" for="aespa">aespa</label>
+            <input class="form-check-input" type="checkbox" name="artista" value="AE" id="aespa">
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label" for="TwentyOnePilots">Twenty One Pilots</label>
+            <input class="form-check-input" type="checkbox" name="artista" value="TOP" id="TwentyOnePilots">
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label" for="SYML">SYML</label>
+            <input class="form-check-input" type="checkbox" name="artista" value="SY" id="SYML">
+          </div>
+
+          <button class="btn btn-dark text-white" onclick="indicacao()" type="submit">Indicar artistas parecidos</button>
+
+          <p id="nomeCompleto"></p>
+          <p id="musica"></p>
+
+
+    </div>
+
+    
+
+
+    <div class=" container m-3">
+        <h3>Informe o seu gênero</h3>
+    
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="feminino" value="F" checked>
+            <label class="form-check-label" for="feminino">Feminino</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="masculino"  value="M">
+            <label class="form-check-label" for="masculino">Masculino</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="nao" value="N">
+            <label class="form-check-label" for="outro">Prefiro não informar</label>
+        </div>
+
+       
+    </div>
+
+
+    <div class="container m-3 me-5">
+
+        <div class="mb-3">
+            <label for="n1" class="form-label">Informe o primeiro valor </label>
+            <input class="form-control" id="n1" type="number">
+     </div>
+
+
+        <div class="mb-3">
+            <label for="n2" class="form-label">Informe o segundo valor </label>
+            <input class="form-control" id="n2" type="number">
+        </div>
+
+        <button class="btn btn-dark text-white" onclick="trocarCor()" type="submit">Mudar Cor</button>
+
+           <p id="resultado"></p> 
+        
+
+    </div>
+
+    
+
+    
+
+    <script src="script.js"></script>
+        
+    </body>
+
+    </html>
